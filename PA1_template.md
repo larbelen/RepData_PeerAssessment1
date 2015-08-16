@@ -1,10 +1,6 @@
 Reproducible Research: Peer Assessment 1
 ========================================
-by luis roldan  
-github repo with RMarkdown source code:
-https://github.com/larbelen/RepData_PeerAssessment1  
-online rendered version on github pages:
-http://larbelen.net/RepData_PeerAssessment1/PA1_template.html  
+
 
 ## Loading and preprocessing the data
 
@@ -24,7 +20,7 @@ steps.date <- aggregate(steps ~ date, data = activity, FUN = sum)
 barplot(steps.date$steps, names.arg = steps.date$date, xlab = "date", ylab = "steps")
 ```
 
-![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2.png) 
+![plot of chunk unnamed-chunk-1](figure/unnamed-chunk-1.png) 
 
 
 2. Calculate and report the **mean** and **median** total number of
@@ -60,7 +56,7 @@ steps.interval <- aggregate(steps ~ interval, data = activity, FUN = mean)
 plot(steps.interval, type = "l")
 ```
 
-![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4.png) 
+![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2.png) 
 
 
 2. Which 5-minute interval, on average across all the days in the
@@ -125,7 +121,7 @@ steps.date <- aggregate(steps ~ date, data = activity, FUN = sum)
 barplot(steps.date$steps, names.arg = steps.date$date, xlab = "date", ylab = "steps")
 ```
 
-![plot of chunk unnamed-chunk-8](figure/unnamed-chunk-8.png) 
+![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3.png) 
 
 ```r
 mean(steps.date$steps)
@@ -182,5 +178,5 @@ for (type in c("weekend", "weekday")) {
 }
 ```
 
-![plot of chunk unnamed-chunk-10](figure/unnamed-chunk-10.png) 
+![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4.png) 
 
